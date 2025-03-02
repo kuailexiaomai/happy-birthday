@@ -122,12 +122,13 @@ body {
   height: auto;
 }
 
+@keyframes moveHat {
+  0% { top: -10px; }
+  100% { top: 10px; }
+}
+
 .six .hat {
-  position: absolute;
-  width: 80px;
-  top: -10px;
-  left: 41.5%;
-  /* transform: scale(0.1); */
+  animation: moveHat 2s forwards; /* 2秒内将帽子移动到 50px */
 }
 
 .baloons img {
